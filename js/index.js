@@ -1,4 +1,5 @@
 window.addEventListener('DOMContentLoaded', () => {
+	//Tabs----------------------------------------------------------
 	const tabs = document.querySelectorAll('.tabheader__item'),
 		tabsContent = document.querySelectorAll('.tabcontent'),
 		tabsParent = document.querySelector('.tabheader__items');
@@ -33,6 +34,18 @@ window.addEventListener('DOMContentLoaded', () => {
 					showTabContent(i);
 				}
 			});
+		}
+
+		//Timer----------------------------------------------------------
+
+		const deadline = '2025-07-29';
+
+		function getTimeRemaining(endtime) {
+			const t = Date.parse(endtime) - Date.parse(new Date()),
+				days = Math.floor(t / (1000 * 60 * 60 * 24)),
+				hours = Math.floor((t / (1000 * 60 * 60)) % 24),
+				minutes = Math.floor((t / 1000 / 60) % 60),
+				seconds = Math.floor((t / 1000) % 60);
 		}
 	});
 });
